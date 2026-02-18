@@ -1,0 +1,348 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Maahirah's software developer portfolio focused on structured systems, architecture decisions, and practical project outcomes." />
+  <title>Maahirah | Software Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;700;800&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="spotlight" aria-hidden="true"></div>
+  <div class="scroll-progress" aria-hidden="true"></div>
+  <div class="cat-cursor" id="cat-cursor" data-state="sit" aria-hidden="true">
+    <span class="cat-glyph">🐈‍⬛</span>
+    <span class="cat-fx">z</span>
+  </div>
+
+  <header class="site-header" id="home">
+    <nav class="nav shell" aria-label="Main navigation">
+      <a href="#home" class="logo logo-cat" aria-label="Home">
+        <span class="logo-cat-badge" aria-hidden="true">🐈‍⬛</span>
+        <span class="logo-initials" aria-hidden="true">MS</span>
+        <span class="logo-cat-fx" aria-hidden="true">✦</span>
+        <span class="sr-only">Home</span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">Menu</button>
+      <ul class="nav-links">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Tech Stack</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero shell reveal" id="hero" data-section="home">
+      <div class="hero-copy">
+        <p class="eyebrow">Welcome to my digital build space</p>
+        <h1 class="hero-name" aria-label="Maahirah Sidhiqah">
+          <span class="name-line">
+            <span class="name-letter">M</span>
+            <span class="name-letter">a</span>
+            <span class="name-letter">a</span>
+            <span class="name-letter name-cyan">h</span>
+            <span class="name-letter">i</span>
+            <span class="name-letter">r</span>
+            <span class="name-letter">a</span>
+            <span class="name-letter">h</span>
+          </span>
+          <span class="name-line">
+            <span class="name-letter">S</span>
+            <span class="name-letter">i</span>
+            <span class="name-letter">d</span>
+            <span class="name-letter name-cyan">h</span>
+            <span class="name-letter">i</span>
+            <span class="name-letter name-cyan">q</span>
+            <span class="name-letter">a</span>
+            <span class="name-letter">h</span>
+          </span>
+        </h1>
+        <p class="lead">Diploma in IT graduate and aspiring software developer, passionate about building scalable, structured, and efficient software systems. With a strong foundation in IT and a drive to solve complex problems, I aim to contribute to projects that merge technical precision with real-world impact.</p>
+        <div class="hero-actions">
+          <a href="#projects" class="scroll-cue" aria-label="Scroll to projects">
+            <span class="scroll-orb" aria-hidden="true">
+              <span class="scroll-mouse"><span class="scroll-wheel"></span></span>
+            </span>
+            <span class="scroll-label">Scroll</span>
+          </a>
+        </div>
+      </div>
+
+      <aside class="hero-console code-frame" aria-label="Developer intro terminal">
+        <div class="terminal-chrome" aria-hidden="true">
+          <span class="dot red"></span>
+          <span class="dot amber"></span>
+          <span class="dot green"></span>
+        </div>
+        <p class="window-title">terminal :: whoami</p>
+        <div class="console-body line-numbered">
+          <p><span class="token-key">const</span> <span class="token-type">profile</span> = {</p>
+          <p>  <span class="token-prop">name</span>: <span class="token-str">"Maahirah Sidhiqah"</span>,</p>
+          <p>  <span class="token-prop">title</span>: <span class="token-str">"Aspiring Software Developer | Diploma in IT Graduate"</span>,</p>
+          <p>  <span class="token-prop">skills</span>: [<span class="token-str">"JavaScript"</span>, <span class="token-str">"Python"</span>, <span class="token-str">"React"</span>],</p>
+          <p>  <span class="token-prop">quickLearner</span>: <span class="token-bool">true</span>,</p>
+          <p>  <span class="token-prop">hardWorker</span>: <span class="token-bool">true</span>,</p>
+          <p>  <span class="token-prop">openToWork</span>: <span class="token-bool">true</span>,</p>
+          <p>  <span class="token-prop">focus</span>: <span class="token-str" id="typed-role">"Coding enthusiast"</span></p>
+          <p>}</p>
+        </div>
+        <div class="terminal-live">
+          <p class="terminal-hint">Try: <code>help</code>, <code>projects</code>, <code>analysis</code>, <code>skills</code>, <code>contact</code></p>
+          <div class="terminal-output" id="terminal-output" aria-live="polite"></div>
+          <form class="terminal-form" id="terminal-form">
+            <label class="sr-only" for="terminal-input">Terminal command</label>
+            <span class="token-key">$</span>
+            <input id="terminal-input" autocomplete="off" placeholder="run command" />
+          </form>
+        </div>
+      </aside>
+    </section>
+
+    <section id="projects" class="section reveal" data-section="projects">
+      <div class="shell">
+        <div class="section-heading">
+          <p class="eyebrow">Projects</p>
+          <h2>View my projects</h2>
+        </div>
+      </div>
+
+      <article class="project-entry reveal" id="project-wdp">
+        <div class="shell project-layout">
+          <div class="project-code code-frame">
+            <p class="window-title">project-01.ts</p>
+            <div class="project-media">
+              <img src="Screenshot 2026-02-18 171610.png" alt="WDP Motors Platform interface screenshot" loading="lazy" />
+            </div>
+            <div class="line-numbered code-block">
+              <p><span class="token-key">const</span> <span class="token-type">project</span> = {</p>
+              <p>  <span class="token-prop">name</span>: <span class="token-str">"Chin Hon Motors - Automated Pricing Console"</span>,</p>
+              <p>  <span class="token-prop">problem</span>: <span class="token-str">"Manual vehicle pricing calculations led to inconsistent totals, incorrect discount application, and slow quotation processing."</span>,</p>
+              <p>  <span class="token-prop">solution</span>: <span class="token-str">"Designed and implemented a rule-based pricing engine that automates base price computation, applies conditional discounts, calculates GST, and generates detailed cost breakdowns using structured control flow and modular functions."</span>,</p>
+              <p>  <span class="token-prop">role</span>: <span class="token-str">"Backend Developer (Pricing Logic Module)"</span>,</p>
+              <p>  <span class="token-prop">techStack</span>: [<span class="token-str">"Python"</span>, <span class="token-str">"Functions"</span>, <span class="token-str">"Conditional Statements"</span>, <span class="token-str">"Input Validation"</span>, <span class="token-str">"Exception Handling"</span>],</p>
+              <p>  <span class="token-prop">impact</span>: <span class="token-str">"Improved pricing accuracy, enforced standardized business rules, and reduced manual administrative workload during quotation generation."</span></p>
+              <p>};</p>
+            </div>
+          </div>
+
+          <aside class="project-side code-frame" aria-label="Project links">
+            <p class="window-title">links</p>
+            <button class="toggle-breakdown btn btn-ghost" type="button" data-target="breakdown-1" aria-expanded="false">Technical Breakdown</button>
+          </aside>
+        </div>
+
+        <div class="shell">
+          <div class="project-breakdown code-frame" id="breakdown-1" hidden>
+            <p class="window-title">architecture-notes.md</p>
+            <div class="breakdown-grid">
+              <section>
+                <h3>Architecture</h3>
+                <p>Layered console architecture with modular separation for input handling, pricing computation, and output formatting.</p>
+              </section>
+              <section>
+                <h3>Key Decisions</h3>
+                <ul>
+                  <li>Automated pricing logic to reduce calculation errors.</li>
+                  <li>Modularized functions to keep each computation task-specific.</li>
+                  <li>Implemented predictable stepwise flow to simplify maintenance and future updates.</li>
+                </ul>
+              </section>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-entry reveal" id="project-tracker">
+        <div class="shell project-layout">
+          <div class="project-code code-frame">
+            <p class="window-title">project-02.ts</p>
+            <div class="project-media">
+              <img src="Screenshot 2026-02-18 165318.png" alt="Smart Application Tracker interface screenshot" loading="lazy" />
+            </div>
+            <div class="line-numbered code-block">
+              <p><span class="token-key">const</span> <span class="token-type">project</span> = {</p>
+              <p>  <span class="token-prop">name</span>: <span class="token-str">"School of IT Club Website"</span>,</p>
+              <p>  <span class="token-prop">problem</span>: <span class="token-str">"Students lacked a central place to discover club activities, events, and membership information."</span>,</p>
+              <p>  <span class="token-prop">solution</span>: <span class="token-str">"Built a responsive website showcasing the club's mission, events, and sign-up details with a clean, modern layout."</span>,</p>
+              <p>  <span class="token-prop">role</span>: <span class="token-str">"Frontend Developer"</span>,</p>
+              <p>  <span class="token-prop">techStack</span>: [<span class="token-str">"React"</span>, <span class="token-str">"JavaScript"</span>, <span class="token-str">"CSS"</span>],</p>
+              <p>  <span class="token-prop">impact</span>: <span class="token-str">"Increased student awareness and sign-ups by providing a clear online presence for the School of IT Club."</span></p>
+              <p>};</p>
+            </div>
+          </div>
+
+          <aside class="project-side code-frame" aria-label="Project links">
+            <p class="window-title">links</p>
+            <button class="toggle-breakdown btn btn-ghost" type="button" data-target="breakdown-2" aria-expanded="false">Technical Breakdown</button>
+          </aside>
+        </div>
+
+        <div class="shell">
+          <div class="project-breakdown code-frame" id="breakdown-2" hidden>
+            <p class="window-title">architecture-notes.md</p>
+            <div class="breakdown-grid">
+              <section>
+                <h3>Architecture</h3>
+                <p>State-driven UI with Firebase-backed persistence for club content updates, event listings, and basic engagement analytics.</p>
+              </section>
+              <section>
+                <h3>Key Decisions</h3>
+                <ul>
+                  <li>Used clear page sections to avoid cluttered presentation of club information.</li>
+                  <li>Separated event details, gallery, and join-us flow into dedicated components.</li>
+                  <li>Optimized media and layout for fast loads on student devices and campus Wi-Fi.</li>
+                </ul>
+              </section>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-entry reveal" id="project-analysis">
+        <div class="shell project-layout">
+          <div class="project-code code-frame">
+            <p class="window-title">project-03.js</p>
+            <div class="project-media">
+              <img src="Screenshot 2026-02-18 165413.png" alt="Analysis project interface screenshot" loading="lazy" />
+            </div>
+            <div class="line-numbered code-block">
+              <p><span class="token-key">const</span> <span class="token-type">project</span> = {</p>
+              <p>  <span class="token-prop">name</span>: <span class="token-str">"Cost of Living vs Quality of Life in Singapore"</span>,</p>
+              <p>  <span class="token-prop">problem</span>: <span class="token-str">"Singapore is one of the most expensive cities globally, raising questions about whether high living costs translate into measurable improvements in quality of life across key sectors such as housing, healthcare, education, and transport."</span>,</p>
+              <p>  <span class="token-prop">solution</span>: <span class="token-str">"Built an interactive Power BI dashboard that integrates multi-source datasets into a structured star-schema model. Developed DAX measures to compare cost indicators with outcome metrics and created efficiency indices to evaluate value-for-money across sectors."</span>,</p>
+              <p>  <span class="token-prop">role</span>: <span class="token-str">"Power BI Developer & Data Analyst"</span>,</p>
+              <p>  <span class="token-prop">techStack</span>: [<span class="token-str">"Power BI"</span>, <span class="token-str">"DAX"</span>, <span class="token-str">"Power Query"</span>, <span class="token-str">"Excel"</span>, <span class="token-str">"Data Modeling"</span>, <span class="token-str">"Data Visualization"</span>],</p>
+              <p>  <span class="token-prop">impact</span>: <span class="token-str">"Delivered data-driven insights that highlight where higher spending leads to strong outcomes and where inefficiencies exist, enabling evidence-based evaluation of cost-to-quality trade-offs in Singapore."</span></p>
+              <p>};</p>
+            </div>
+          </div>
+
+          <aside class="project-side code-frame" aria-label="Project links">
+            <p class="window-title">links</p>
+            <button class="toggle-breakdown btn btn-ghost" type="button" data-target="breakdown-3" aria-expanded="false">Technical Breakdown</button>
+          </aside>
+        </div>
+
+        <div class="shell">
+          <div class="project-breakdown code-frame" id="breakdown-3" hidden>
+            <p class="window-title">architecture-notes.md</p>
+            <div class="breakdown-grid">
+              <section>
+                <h3>Architecture</h3>
+                <p>Star-schema Power BI model combining cost-of-living, quality-of-life, and demographic datasets, with Power Query handling data cleaning and DAX measures powering comparative insights.</p>
+              </section>
+              <section>
+                <h3>Key Decisions</h3>
+                <ul>
+                  <li>Central fact table for country-year metrics with dimension tables for geography and indicators.</li>
+                  <li>Applied Power Query steps for normalization, outlier handling, and consistent currency scales.</li>
+                  <li>Created DAX measures for rankings, percent differences, and cost-quality indices to drive visuals.</li>
+                </ul>
+              </section>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section id="skills" class="shell section reveal" data-section="skills">
+      <div class="section-heading">
+        <p class="eyebrow">Tech Stack</p>
+        <h2>Structured capabilities</h2>
+      </div>
+
+      <div class="stack-grid">
+        <article class="stack-group code-frame">
+          <p class="window-title">languages.json</p>
+          <h3>Languages</h3>
+          <ul>
+            <li><span class="skill-chip" data-used="Used in: WDP Motors Platform" data-project-ref="project-wdp" tabindex="0">JavaScript</span></li>
+            <li><span class="skill-chip" data-used="Used in: WDP Motors Platform" data-project-ref="project-wdp" tabindex="0">Python</span></li>
+            <li><span class="skill-chip" data-used="Used in: WDP Motors Platform" data-project-ref="project-wdp" tabindex="0">SQL</span></li>
+            <li><span class="skill-chip" data-used="Used in: Frontend structure and page architecture" tabindex="0">HTML</span></li>
+            <li><span class="skill-chip" data-used="Used in: Frontend styling and responsive UI work" tabindex="0">CSS</span></li>
+          </ul>
+        </article>
+
+        <article class="stack-group code-frame">
+          <p class="window-title">frameworks.json</p>
+          <h3>Frameworks</h3>
+          <ul>
+            <li><span class="skill-chip" data-used="Used in: Smart Application Tracker" data-project-ref="project-tracker" tabindex="0">React</span></li>
+            <li><span class="skill-chip" data-used="Used in: WDP Motors Platform" data-project-ref="project-wdp" tabindex="0">Flask</span></li>
+            <li><span class="skill-chip" data-used="Used in: UI component layout and responsive design work" tabindex="0">Bootstrap</span></li>
+            <li><span class="skill-chip" data-used="Used in: API and backend fundamentals" tabindex="0">Node.js</span></li>
+          </ul>
+        </article>
+
+        <article class="stack-group code-frame">
+          <p class="window-title">tools.json</p>
+          <h3>Tools</h3>
+          <ul>
+            <li><span class="skill-chip" data-used="Used in: Version control across both projects" data-project-ref="project-wdp" tabindex="0">Git</span></li>
+            <li><span class="skill-chip" data-used="Used in: Daily development workflow" data-project-ref="project-tracker" tabindex="0">VS Code</span></li>
+            <li><span class="skill-chip" data-used="Used in: UI planning for tracker workflows" tabindex="0">Figma</span></li>
+            <li><span class="skill-chip" data-used="Used in: Reporting and dashboard analytics work" tabindex="0">Power BI</span></li>
+            <li><span class="skill-chip" data-used="Used in: Data modeling and document database practice" tabindex="0">MongoDB</span></li>
+            <li><span class="skill-chip" data-used="Used in: Low-code app and database development" tabindex="0">Oracle APEX</span></li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="shell section reveal" data-section="contact">
+      <div class="section-heading">
+        <p class="eyebrow">Contact</p>
+        <h2>Let&apos;s work together!</h2>
+      </div>
+
+      <div class="contact-direct code-frame" aria-label="Direct contact">
+        <p class="window-title">contact.ts</p>
+        <p class="contact-copy">
+          The fastest way to reach me is by email. Share your idea, role details, or collaboration plan and I&apos;ll reply as soon as possible.
+        </p>
+        <p class="contact-email">mmaahirahh@gmail.com</p>
+        <div class="contact-actions">
+          <a href="mailto:mmaahirahh@gmail.com" class="btn btn-primary">Email Me</a>
+          <a href="assets/Maahirah_Resume.pdf" class="btn btn-ghost" download>Download Resume</a>
+          <a href="https://www.linkedin.com/in/maahirah-sidhiqah-a45709370/" class="btn btn-ghost" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-inner">
+      <p>&copy; <span id="year"></span> Maahirah. Built with intent.</p>
+    </div>
+  </footer>
+
+  <div class="command-palette" id="command-palette" hidden>
+    <div class="command-backdrop" data-close-palette="true"></div>
+    <section class="command-panel code-frame" aria-label="Command palette">
+      <p class="window-title">command-palette</p>
+      <input id="palette-input" class="palette-input" placeholder="Type a command or choose an action..." />
+      <div class="palette-list" id="palette-list">
+        <button type="button" data-action="home">Go to Home</button>
+        <button type="button" data-action="projects">Go to Projects</button>
+        <button type="button" data-action="project-wdp">Open WDP Project</button>
+        <button type="button" data-action="project-tracker">Open Tracker Project</button>
+        <button type="button" data-action="project-analysis">Open Analysis Project</button>
+        <button type="button" data-action="skills">Go to Tech Stack</button>
+        <button type="button" data-action="contact">Go to Contact</button>
+        <button type="button" data-action="zen">Toggle Zen Mode</button>
+        <button type="button" data-action="terminal-help">Run `help` in terminal</button>
+      </div>
+    </section>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
+
